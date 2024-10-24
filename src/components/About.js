@@ -12,8 +12,6 @@ const About = () => {
                     <p>
                     On national television, online and on the ground in 3,000 Government Schools in India, Going to School's programs are designed to reach young people who are offline and enrolled in the government school system
                     </p>
-    
-          
                     <img 
                         src="/images/about-us.jpg"  
                         alt="About Going to School"

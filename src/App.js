@@ -28,14 +28,12 @@ function App() {
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contactus />} />
 
-          {/* Financials Route as a Parent, with Nested Routes for Reports */}
           <Route path="/financials" element={<Financials />}>
             <Route path="annual-report" element={<AnnualReport />} />
             <Route path="financial-report" element={<Financialreport />} />
             <Route path="fcra-report" element={<FCRAreport />} />
           </Route>
 
-          {/* New route to handle dynamic year-based financial report details */}
           <Route path="/financial-report/:year" element={<FinancialReportDetail />} />
           <Route path="/annual-report/:year" element={<AnnualReportDetail />} />
           <Route path="/fcra-report/:year" element={<FCRAreportDetail />} />

@@ -4,9 +4,9 @@ import { useNavigate } from 'react-router-dom';
 const Financialreport = () => {
   const navigate = useNavigate();
 
-  // Function to handle the view button click and navigate to detail page
+  
   const handleViewClick = (year) => {
-    navigate(`/financial-report/${year}`);  // Redirect to detail page with year as parameter
+    navigate(`/financial-report/${year}`); 
   };
 
   return (

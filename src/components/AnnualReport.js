@@ -6,7 +6,7 @@ const AnnualReport = () => {
   const navigate = useNavigate();
 
   const handleViewClick = (year) => {
-    navigate(`/annual-report/${year}`);  // Redirect to detailed page with year
+    navigate(`/annual-report/${year}`);  
   };
 
   return (
