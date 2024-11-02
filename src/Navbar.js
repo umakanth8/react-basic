@@ -15,6 +15,7 @@ const Navbar = () => {
                 <h1 className="site-title">Going to School</h1>
             </div>
             <ul className="nav-links">
+                <li><Link to ="/Home">Home</Link></li>
                 <li><Link to="/about">About</Link></li>
                 <li><Link to="/supporters">Supporters</Link></li>
                 <li><Link to="/policies">Policies</Link></li>

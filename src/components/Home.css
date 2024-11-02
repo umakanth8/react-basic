@@ -1,0 +1,60 @@
+.home-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.home-image-container {
+  position: relative;
+  width: 120%;
+  max-width: 1450px; /* Increased the max-width for a larger image */
+  opacity: 0;
+  transform: scale(0.9);
+  transition: opacity 1s ease-in, transform 1s ease-in;
+}
+
+.home-image-container.show {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.home-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  font-size: 1.5rem;
+  animation: fadeIn 0.8s ease forwards;
+}
+
+.overlay-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.overlay-description {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+      transform: translate(-50%, -50%) scale(0.9);
+  }
+  to {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+  }
+}

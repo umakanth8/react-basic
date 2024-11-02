@@ -13,7 +13,9 @@ import FCRAreport from './components/FCRAreport';
 import FinancialReportDetail from './components/FinancialReportDetail'; 
 import AnnualReportDetail from './components/AnnualReportDetail';
 import FCRAreportDetail from './components/FCRAreportDetail';
-// New component to show detailed view
+import Home from './components/Home';
+
+
 import './App.css';
 
 function App() {
@@ -22,6 +24,7 @@ function App() {
       <Navbar />
       <div className="page-container">
         <Routes>
+          <Route path="/Home" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/supporters" element={<Supporters />} />
           <Route path="/policies" element={<Policies />} />
